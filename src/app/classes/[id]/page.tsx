@@ -5,7 +5,8 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col">
-      <div className="text-2xl bg-red-200 p-5">
+      <div className="flex flex-row gap-10 text-2xl bg-red-200 p-5">
+        <Link href="/classes">Home</Link>
         <span className="font-bold">{title}</span>
       </div>
       <div className="flex flex-row gap-10 bg-blue-200 p-5">
