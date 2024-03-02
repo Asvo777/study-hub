@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function Page({ params }: { params: { id: string } }) {
+  redirect(`/classes/${params.id}/q-and-a`);
   const title = params.id.toUpperCase();
 
   return (
