@@ -25,6 +25,7 @@ export default function Page() {
       <section className="float-right w-2/5 bg-slate-300 min-h-screen">
         {questions.map((question) => (
           <span
+            key={question.id}
             className="cursor-pointer"
             onClick={(e) => setQuestionSelected(question.id)}
           >
@@ -36,8 +37,7 @@ export default function Page() {
           </span>
         ))}
       </section>
-
-      <section className=" float-left float-left min-h-screen w-3/5 p-8 flex flex-col justify-between content-center bg-red-100 fixed">
+      <section className="float-left min-h-screen w-3/5 p-8 flex flex-col justify-between content-center bg-red-100 fixed">
         <div>
           {questionSelected == null ? (
             <p>Ask a question to the community</p>
