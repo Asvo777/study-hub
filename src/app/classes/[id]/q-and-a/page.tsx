@@ -55,7 +55,9 @@ export default function Page({ params }: { params: { id: string } }) {
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
             />
-            <button className="bg-slate-800">Ask Question</button>
+            <button className="bg-slate-800 text-white p-3">
+              Ask Question
+            </button>
           </div>
         </section>
       </>

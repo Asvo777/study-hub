@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Page() {
@@ -31,8 +31,18 @@ export default function Page() {
       <div className="min-h-screen bg-black text-white flex flex-col items-center p-8">
         <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
           <h1 className="text-6xl font-bold">Login</h1>
-          <input type="text" name="" id="" placeholder="Username" />
-          <input type="text" name="" id="" placeholder="Password" />
+          <input
+            className="text-black"
+            type="email"
+            name="email"
+            placeholder="Username"
+          />
+          <input
+            className="text-black"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
           <button type="submit" className="bg-blue-600 p-3">
             Login
           </button>
