@@ -32,13 +32,13 @@ export default function Page() {
         <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
           <h1 className="text-6xl font-bold">Login</h1>
           <input
-            className="text-black"
+            className="text-black p-2"
             type="email"
             name="email"
             placeholder="Username"
           />
           <input
-            className="text-black"
+            className="text-black p-2"
             type="password"
             name="password"
             placeholder="Password"
