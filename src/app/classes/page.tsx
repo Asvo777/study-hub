@@ -9,10 +9,8 @@ export default function Page() {
   ) : (
     <div className="grid grid-cols-1 gap-4 p-5">
       <Class id="mat-101" title="Calculus 101" />
-      <Class id="mat-101" title="English 101" />
-      <Class id="mat-101" title="Science 101" />
-      <Class id="mat-101" title="History 101" />
-      <Class id="mat-101" title="History 555" />
+      <Class id="eng-101" title="English 101" />
+      <Class id="sci-101" title="Science 101" />
     </div>
   );
 }
