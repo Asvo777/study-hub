@@ -17,7 +17,6 @@ export default function Question(props: ClassProps) {
           <h4 className="text-sm	inline-block">
             Answers: {props.numberOfAnswers}
           </h4>
-          <h5 className="inline-block text-sm text-slate-300">{props.id}</h5>
         </div>
       </div>
     </>
